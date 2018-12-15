@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.pull-right {
+  float: right!important;
+}
+.convenient-nav {
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+}
+.convenient-nav ul li {
+  position: relative;
+  overflow: hidden;
+}
+.convenient-nav ul li .imgBox {
+  cursor: pointer;
+  transition: all 0.44s;
+  position: relative;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+}
+.convenient-nav ul li p {
+  display: none;
+  float: right;
+  transition: all 1s;
+  height: 52px;
+  margin: 0 -26px 0 0;
+  padding: 0 32px 0 12px;
+  line-height: 52px;
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  border-width: 1px 0 1px 1px;
+  border-radius: 28px 0 0 28px;
+  white-space: nowrap;
+}
+.convenient-nav ul li.convenient-nav__li-complaint .imgBox {
+  background: url(../img/icon-complaint.png) no-repeat center right;
+}
+.convenient-nav ul li.convenient-nav__li-complaint:hover p {
+  display: block;
+  -webkit-animation: slide-left 0.33s;
+  -moz-animation: slide-left 0.33s;
+  animation: slide-left 0.33s;
+}
+@-moz-keyframes slide-left {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 105px;
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 105px;
+  }
+}
+@keyframes slide-left {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 105px;
+  }
+}
+.convenient-nav ul li.convenient-nav__li-complaint:hover .imgBox {
+  background: url(../img/icon-complaint-active.png) no-repeat center right;
+}
+.convenient-nav ul li.convenient-nav__li-manager {
+  margin: 12px 0 0 0;
+}
+.convenient-nav ul li.convenient-nav__li-manager .imgBox {
+  background: url(../img/icon-manager.png) no-repeat center right;
+}
+.convenient-nav ul li.convenient-nav__li-manager:hover p {
+  display: block;
+  -webkit-animation: slide-left-large 0.66s;
+  -moz-animation: slide-left-large 0.66s;
+  animation: slide-left-large 0.66s;
+}
+@-moz-keyframes slide-left-large {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 188px;
+  }
+}
+@-webkit-keyframes slide-left-large {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 188px;
+  }
+}
+@keyframes slide-left-large {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 188px;
+  }
+}
+.convenient-nav ul li.convenient-nav__li-manager:hover .imgBox {
+  background: url(../img/icon-manager-active.png) no-repeat center right;
+}
